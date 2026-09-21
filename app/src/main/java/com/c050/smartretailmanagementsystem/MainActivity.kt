@@ -20,8 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             SmartRetailManagementSystemTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    DashboardScreen(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -40,8 +39,9 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
-    SmartRetailManagementSystemTheme {
-        Greeting("Android")
-    }
+fun DashboardScreen(modifier: Modifier = Modifier) {
+    Text(
+        text = "Smart Retail Management System",
+        modifier = modifier
+    )
 }
