@@ -16,7 +16,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -28,6 +27,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.c050.smartretailmanagementsystem.ui.theme.SmartRetailManagementSystemTheme
+import com.c050.smartretailmanagementsystem.navigation.AppNavigation
 
 class MainActivity : ComponentActivity() {
 
@@ -38,14 +38,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             SmartRetailManagementSystemTheme {
-                Scaffold(
-                    modifier = Modifier.fillMaxSize()
-                ) { innerPadding ->
-
-                    DashboardScreen(
-                        modifier = Modifier.padding(innerPadding)
-                    )
-                }
+                AppNavigation()
             }
         }
     }
