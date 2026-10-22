@@ -15,3 +15,16 @@
 local.properties
 
 .idea/
+
+# Backend generated files
+backend/.venv/
+backend/.gradle/
+backend/build/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store

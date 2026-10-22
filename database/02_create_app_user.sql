@@ -1,0 +1,6 @@
+CREATE USER IF NOT EXISTS 'retail_app'@'localhost'
+IDENTIFIED BY 'CHANGE_ME_WITH_A_STRONG_PASSWORD';
+
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, INDEX
+ON smart_retail_db.*
+TO 'retail_app'@'localhost';
